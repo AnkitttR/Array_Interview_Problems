@@ -1,0 +1,46 @@
+Problem
+Most programmers will tell you that one of the ways to improve your performance in competitive programming is to practice a lot of problems.
+
+Our Chef took the above advice very seriously and decided to set a target for himself.
+
+Chef decides to solve at least 1010 problems every week for 4 weeks.
+Given the number of problems he actually solved in each week over 4 weeks as P1, P2, P3,P4, output the number of weeks in which Chef met his target.
+
+Input Format
+There is a single line of input, with 4 integers P1, P2, P3,P4 . These are the number of problems solved by Chef in each of the 4 weeks.
+
+Output Format
+Output a single integer in a single line - the number of weeks in which Chef solved at least 10 problems.
+
+Constraints:
+1<= P1,P2,P3,P4 <=100
+
+MY solution *********************************************************************************************************************
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner s = new Scanner(System.in);
+		    int[] P = new int[4];
+		    int k = 0;
+		    
+		    for(int i=0;i<4;i++)
+		    {
+		       P[i] = s.nextInt();
+		       
+		       if(10<=P[i])
+		       {
+		           k++;
+		       }
+		    }
+	
+	    System.out.println(k);
+	}
+}
